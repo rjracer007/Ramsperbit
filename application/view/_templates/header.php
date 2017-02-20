@@ -14,38 +14,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= URL ?>dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?= URL ?>dist/css/skins/_all-skins.min.css">
-  <!-- iCheck -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/iCheck/flat/blue.css">
-  <!-- Morris chart -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/morris/morris.css">
-  <!-- jvectormap -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/jvectormap/jquery-jvectormap-1.2.2.css">
-  <!-- Date Picker -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/datepicker/datepicker3.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="<?= URL ?>plugins/daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="<?= URL ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <link rel="stylesheet" href="<?= URL ?>plugins/daterangepicker/daterangepicker.css">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="<?= URL ?>plugins/datepicker/datepicker3.css">
-  <!-- iCheck for checkboxes and radio inputs -->
+
+  <link rel="stylesheet" href="<?= URL ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
   <link rel="stylesheet" href="<?= URL ?>plugins/iCheck/all.css">
-  <!-- Bootstrap Color Picker -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/colorpicker/bootstrap-colorpicker.min.css">
-  <!-- Bootstrap time Picker -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/timepicker/bootstrap-timepicker.min.css">
-  <!-- Select2 -->
+
   <link rel="stylesheet" href="<?= URL ?>plugins/select2/select2.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?= URL ?>dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?= URL ?>dist/css/skins/_all-skins.min.css">
+
+  <link rel="stylesheet" href="<?= URL ?>dist/css/skins/_all-skins.css">
+  <!-- fullCalendar 2.2.5-->
+  <link rel="stylesheet" href="<?= URL ?>plugins/fullcalendar/fullcalendar.min.css">
+
+  <link rel="stylesheet" href="<?= URL ?>plugins/fullcalendar/fullcalendar.print.css" media="print">
+
+  <link rel="stylesheet" href="<?= URL ?>plugins/normalize/normalize.css">
+
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -227,12 +224,10 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+
         </ul>
       </div>
-    </nav>  
+    </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
@@ -272,7 +267,6 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= URL ?>gusuario/index">Gestión de Usuario</a></li>
             <li><a href="<?= URL ?>gusuario/index">Gestión de Empleado</a></li>
           </ul>
         </li>
@@ -297,11 +291,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Pedido</a></li>
+            <li><a href="<?= URL ?>cliente/index">Clientes</a></li>
+            <li><a href="<?= URL ?>pedido/index">Pedido</a></li>
           </ul>
         </li>
-        <li class="active"><a href="#"><i class="glyphicon glyphicon-folder-open"></i> <span>Lote</span></a></li>
+        <li class="active"><a href="<?= URL ?>lote/index"><i class="glyphicon glyphicon-folder-open"></i> <span>Lote</span></a></li>
         <li>
           <a href="<?= URL ?>calendario/index">
             <i class="fa fa-calendar"></i> <span>Calendario</span>
